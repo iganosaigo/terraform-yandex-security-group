@@ -1,9 +1,9 @@
-output "security_group_id" {
+output "security_group" {
   description = "The ID of the security group"
-  value       = yandex_vpc_security_group.this.id
+  value       = yandex_vpc_security_group.this
 }
 
-output "security_group_rule_ids" {
+output "security_group_rules" {
   description = "IDs of created security group rules"
-  value       = [for i in yandex_vpc_security_group_rule.this : i.id]
+  value       = yandex_vpc_security_group_rule.this
 }

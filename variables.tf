@@ -6,7 +6,6 @@ variable "name" {
 variable "network_id" {
   description = "Network ID where to create security-group"
   type        = string
-  default     = null
 }
 
 variable "folder_id" {
