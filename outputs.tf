@@ -1,9 +1,9 @@
 output "security_group" {
-  description = "The ID of the security group"
+  description = "Security Group"
   value       = yandex_vpc_security_group.this
 }
 
 output "security_group_rules" {
-  description = "IDs of created security group rules"
+  description = "Security Group Rules"
   value       = yandex_vpc_security_group_rule.this
 }

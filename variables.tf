@@ -1,15 +1,15 @@
 variable "name" {
-  description = "Name for resources"
+  description = "Name"
   type        = string
 }
 
 variable "network_id" {
-  description = "Network ID where to create security-group"
+  description = "Network ID"
   type        = string
 }
 
 variable "folder_id" {
-  description = "Folder ID where to create security-group"
+  description = "Folder ID"
   type        = string
   default     = null
 }
@@ -28,5 +28,3 @@ variable "rules" {
   }))
   default = []
 }
-
-
